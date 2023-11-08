@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="research.css">
+
+
+</head>
+
+<body>
+
+    <body>
+
+
+        <div id="loader">
+            <div class="ring-container">
+                <div class="ring1">
+                    <div class="ring2">
+                        <div class="ring3"></div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    
+    
+        <script>
+            // Function to hide the loader after 3 seconds
+            function hideLoader() {
+                var loader = document.getElementById("loader");
+                loader.style.opacity = "0";
+                loader.style.transition = "opacity 0.5s"
+                loader.style.zIndex = "-999"
+            }
+        
+            // Call the hideLoader function after 3 seconds (3000 milliseconds)
+            setTimeout(hideLoader, 3000);
+        </script>
+
+        <nav id="main_nav">
+            <div class="menu-icon" id="menuIcon" onclick="entering()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span id="menuText"></span>
+            </div>
+        </nav>
+
+        <div class="overlay" id="menuOverlay">
+            <button class="close-overlay" onclick="closeOverlay() , exiting"> Exit</button>
+            <div class="menu-wrapper" id="cotaineroverlay">
+                <div class="left-content">
+                    <div class="menu-content">
+                        <ul class="vertical-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                            <li><a href="projects.html">Research and Projects</a></li>
+           
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="search-container">
+                    <div>
+                        <ul class="vertical-list">
+                            <li><a onclick="closeOverlay()" style="color: red;">Experience</a></li>
+                            <li><a href="https://lenishpandey.blogspot.com/">My Blogs</a></li>
+                            <li><a href="projects.html">Resources</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <script src="myweb.js"></script>
+        <link rel="stylesheet" href="myweb.css">
+
+
+
+        <div class="exp-heading">
+            <div class="cover-name-exp ">
+                <div class="exp">
+
+                    <center>
+                        <div clas="exp-title-cover">
+                            <div class="exp-title cover"> Experience </div> </div>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+        <div class="all-exp">
+            <div class="experi" id="qnepal">
+                <div class="exp-left">
+                    <div class="exp-img">
+                        <img src="allgraphics/qnepal.png" alt="Image Description">
+                    </div>
+                    <div class="exp-site"><button>Website</button></div>
+                    <div class="exp-icon">
+                        <i class="icon"><img src="allgraphics/linkedin.png"></i>
+                        <i class="icon">Icon 2</i>
+                        <i class="icon">Icon 3</i>
+                    </div>
+                </div>
+                <div class="exp-right">
+                    <div class="exp-name">
+                        <div class="main">QNepal </div>
+                        <div class="sub"> Organizer and Mentor </div>
+                    </div>
+                    <div class="exp-description">
+                        <div class="descrip-head"> Skills Aquired
+                        </div>
+
+                        <div class="descrip-more">• Creating a dynamic learning environment in Nepal and attracting enthusiasts from around the world in the field of Quantum Computing
+                            <br>• Collaborated with QWorld to lead the comprehensive planning and execution of a one-week event for the QBronze 115 Certificate program,  including scheduling, certificate distribution, and participant and volunteer coordination.
+                            <br>• Mentored participants in complex quantum computing concepts, delivering lab sessions on Quantum Teleportation and Superdense Coding.
+                            <br>• Established strategic partnerships with experts and professors in quantum computing, organizing knowledge-sharing talks.
+                            <br>• Led cross-functional teams to connect with quantum computing enthusiasts, enhancing engagement.
+                            <br>• Maintained a robust online presence, actively engaging the quantum computing community via social media. </div>
+                            
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="experi" id="fusemachineai">
+                <div class="exp-left">
+                    <div class="exp-img">
+                        <img src="" alt="Image Description">
+                    </div>
+                    <div class="exp-site"><button>Website</button></div>
+                    <div class="exp-icon">
+                        <i class="icon">Icon 1</i>
+                        <i class="icon">Icon 2</i>
+                        <i class="icon">Icon 3</i>
+                    </div>
+                </div>
+                <div class="exp-right hiddenright">
+                    <div class="exp-name" style="background: #3589C6;">
+                        <div class="main">Fuse Machines AI</div>
+                        <div class="sub">Fellow Scholar and Intern</div>
+                    </div>
+                    <div class="exp-description">
+                        <div class="descrip-head"> Skills Aquired
+                        </div>
+
+                        <div class="descrip-more">• Collaborated to work on two project: vehicle carbon emission prediction and solving Baghchal game using Deep Q Learning.
+                            <br>• Reviewed research paper on Attention mechanism; Generative Adversarial Network.
+                            <br>• Achieved certification on ML , DL and studying NLP and CV.
+                            
+                             </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="experi" id="incubate">
+                <div class="exp-left">
+                    <div class="exp-img">
+                        <img src="" alt="Image Description">
+                    </div>
+                    <div class="exp-site"><button>Website</button></div>
+                    <div class="exp-icon">
+                        <i class="icon">Icon 1</i>
+                        <i class="icon">Icon 2</i>
+                        <i class="icon">Icon 3</i>
+                    </div>
+                </div>
+                <div class="exp-right hiddenright">
+                    <div class="exp-name" style="background-color: #B20030;">
+                        <div class="main">Incubate Nepal</div>
+                        <div class="sub"> Research Scholar </div>
+                    </div>
+                    <div class="exp-description">
+                        <div class="descrip-head"> About
+                        </div>
+
+                        <div class="descrip-more">• Developed a specialized oracle tailored for scheduling problem (optimization problem) , and programmed the quantum
+                            computer using Qiskit on IBM quantum hardware and simulator under supervision of Dr. Mukesh Ghimire, PhD.
+                            Graduate NYU, USA .
+                            <br>• Research the project on using Variational Quantum Eigensolver to simulate molecules after reviewing 20 + papers and
+                            scholarly articles.
+                            <br>• Defended the project in front of industry professionals, and expert in quantum computing and written a review paper of
+                            the project </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="experi">
+                <div class="exp-left">
+                    <div class="exp-img">
+                        <img src="allgraphics/srcn.jfif" alt="Image Description">
+                    </div>
+                    <div class="exp-site"><button>Website</button></div>
+                    <div class="exp-icon">
+                        <i class="icon">Icon 1</i>
+                        <i class="icon">Icon 2</i>
+                        <i class="icon">Icon 3</i>
+                    </div>
+                </div>
+                <div class="exp-right hiddenright">
+                    <div class="exp-name" style="background-color: #186f53;">
+                        <div class="main">Student Research Council Nepal</div>
+                        <div class="sub"> Research Scholar </div>
+                    </div>
+                    <div class="exp-description">
+                        <div class="descrip-head"> About
+                        </div>
+
+                        <div class="descrip-more"> •  Prepared a curriculum to study Quantum Computing and lead a 10 week project on Quantum Optimization problem
+                            <br>• Reviewed application of 150+ applicants and taught 5 fellow high school graduates quantum computing
+                            <br>• Used QUBO algorithm to solve classical Ising modeling Problem. </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="experi">
+                <div class="exp-left">
+                    <div class="exp-img">
+                        <img src="allgraphics/ma" alt="Image Description">
+                    </div>
+                    <div class="exp-site"><button>Website</button></div>
+                    <div class="exp-icon">
+                        <i class="icon">Icon 1</i>
+                        <i class="icon">Icon 2</i>
+                        <i class="icon">Icon 3</i>
+                    </div>
+                </div>
+                <div class="exp-right hiddenright">
+                    <div class="exp-name" style="background-color: #27d659;">
+                        <div class="main">Mattrab Community
+                        </div>
+                        <div class="sub"> Content Creator</div>
+                    </div>
+                    <div class="exp-description">
+                        <div class="descrip-head"> About
+                        </div>
+
+                        <div class="descrip-more">• Created and verified educational resources for high school students, in the field of physics and mathematics. 
+                            <BR>• Collaborated with professor to proof read the solution of the question.
+                            
+                            
+                            
+                             </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+                <div class="experi">
+                    <div class="exp-left">
+                        <div class="exp-img">
+                            <img src="allgraphics/physicsclub.png" alt="Image Description">
+                        </div>
+                        <div class="exp-site"><button>Website</button></div>
+                        <div class="exp-icon">
+                            <i class="icon">Icon 1</i>
+                            <i class="icon">Icon 2</i>
+                            <i class="icon">Icon 3</i>
+                        </div>
+                    </div>
+                    
+                    <div class="exp-right hiddenright">
+                        <div class="exp-name" style="background-color: #0e1f3d;">
+                            <div class="main"> SXC PHYSICS CLUB</div>
+                            <div class="sub"> Human Resources Manager </div>
+                        </div>
+                        <div class="exp-description">
+                            <div class="descrip-head"> About
+                            </div>
+    
+                            <div class="descrip-more">• Managed volunteer tasks related to the Physics Olympiad and the Treasure Hunt.
+                                <br>• Assigned and supervised general tasks for members of the SXC Physics Club.
+                                <br>• Collaborated closely with teachers to plan and coordinate event schedules. </div>
+    
+                        </div>
+                    </div>
+    
+    
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <script src="onscroll.js"></script>
+    </body>
+</body>
+
+
+</html>

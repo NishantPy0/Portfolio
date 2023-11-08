@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+
+
+
+
+
+/* CSS to make the slider cover the whole screen with a margin of 10px each side */
+.swiper-container {
+ /* width: calc(100% -50px); /* Adjust the width with margin */
+  max-width: 100vw; /* Set a maximum width if desired */
+  height: 100vh; /* Adjust the height as needed */
+
+  /* background: url(https://wallpapers.com/images/featured/black-gold-background-optua4rlhb9gnk6t.jpg) ; */
+  background-color: #121212;
+   background-size: cover;
+ 
+  align-items: center;
+
+}
+
+/* Adjust the size of each slide */
+.swiper-slide {
+  width: 80%; /* Make each slide take 80% of the container width */
+  height: 90vh; /* Make each slide take 90% of the container height */
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(246, 243, 243);
+  cursor: e-resize;
+  border: 1px solid red;
+  border-radius: 50px;
+
+  max-width : 750px;
+  color : goldenrod;
+  max-height: 90vh;
+
+}
+
+
+.swiper-slide h2 
+{
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Caveat', cursive;
+  font-size: 10vh;
+}
+
+
+@media (min-width : 767px) and (max-width: 950px)
+{
+  .swiper-container
+  {
+    max-width: 5000px;
+  }
+  .swiper-slide{
+    max-width: 700px;
+  }
+}

@@ -1,0 +1,1104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=PT+Serif:ital@1&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  transition: left 1s;
+  animation: borderRadius;
+  animation-delay: 3s;
+  z-index: 5;
+  overflow: hidden;
+
+}
+
+@keyframes borderRadius {
+  from {
+    border-radius: 250px;
+  }
+
+  to {
+    border-radius: 10px;
+  }
+}
+
+.overlay button {
+  width: fit-content;
+  height: 60px;
+  background: none;
+  font: italic;
+  font-stretch: ultra-expanded;
+  border-radius: 5px;
+  /* Add border radius */
+  color: rgb(23, 236, 165);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  border-color: aqua;
+}
+
+.overlay li {
+  margin: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+  /* Add bottom border to li elements */
+}
+
+.overlay a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.overlay a:hover {
+  color: #00bcd4;
+}
+
+/* Overlay Items edits */
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  margin: 30vh 3vh;
+
+
+}
+
+.left-content {
+  border-right: 2px solid gray;
+  /* Add right border to left content */
+  padding: 20px;
+  margin-left: 25px;
+  /* Add some padding to separate content from border */
+  transition: opacity 0s ease-in-out;
+  opacity: 1;
+  font-size: xx-large;
+  width: 30%;
+
+}
+
+
+
+.right-content {
+  padding-left: 20px;
+  padding-right: 6rem;
+  /* Add some padding to separate content from border */
+  opacity: 1;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content h2 {
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.square-button {
+  width: 100px;
+  height: 100px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-text {
+  font-size: 4vh;
+  /* Adjust the font size as needed */
+  text-decoration: underline;
+  /* Add underline */
+  text-align: center;
+  color: #fff;
+}
+
+
+.square-button img {
+  width: 4vh;
+  height: 4vh;
+  justify-content: center;
+  padding: 0px;
+}
+
+
+.search-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  z-index: 100;
+  border-right: 2px solid gray;
+  padding: 20px;
+  margin-left: 25px;
+  transition: opacity 0s ease-in-out;
+  opacity: 1;
+  font-size: xx-large;
+
+}
+
+.search-container ul {
+  align-items: left;
+  text-align: left;
+}
+
+.close-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+
+#main_nav {
+  display: flex;
+  justify-content: right;
+  animation: slideFromTop 2s ease forwards;
+  animation-delay: 1s;
+  background: none;
+  background-color: none;
+  opacity: 1;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  z-index: 1;
+
+
+}
+
+.menu-icon {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 50px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-top: 30px;
+
+  margin-right: 3vw;
+}
+
+
+.menu-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3 ease-in-out;
+  position: relative;
+}
+
+
+
+.menu-icon span:nth-child(4) {
+  display: none;
+}
+
+.menu-icon.active {
+  display: none;
+}
+
+
+
+
+
+
+
+.fullscreen-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+   height : 100vh;
+    height: fit-content;
+    background-color: #121212;
+    display: flex;
+
+    flex-direction : column;
+    height : auto;
+   
+  }
+
+  .about-heading {
+    text-align  : center;
+    justify-content: center;
+    color: white;
+    height : 20vh;
+    top: 50%;
+    font-size : 10vh;
+    margin-top: 25px;
+    
+  }
+  .about-content {
+    display : flex;
+    flex-direction : row;
+    height : 80vh;
+  }
+  /* Styles for "myquote" and "myimg" divs */
+  .myquote,
+  .myimg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+   
+
+  }
+
+    /* Styles for the paragraph inside "myquote" */
+  .myquote p {
+    text-align: left;
+    text-size-adjust: 2rem;
+    width: 50%;
+    
+    font-size : 1.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-break: 5px;
+    height: 10vh;
+    padding-left: 4vh;
+
+    
+    
+  }
+
+ 
+
+  /* Styles for the image inside "myimg" */
+  .myimg img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin: 0 auto;
+  }
+
+
+.aboutme {
+    
+    width: 100%;
+
+
+color : white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Styles for "myedu" section */
+.myedu {
+    background-color: #121212;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.myedu-banner {
+ 
+  text-align: center;
+  background-image: url(Lenish\ Protfolio.png);
+  background-size : cover ;
+  height: 20vh;
+  padding: 25px;
+}
+
+
+.edu-txt-cover   {
+  font-size: 15vh;
+  gap: 3px;
+  font-weight : 600;
+ letter-spacing : 3px;
+ width : fit-content;
+ height: 20vh;
+ overflow: hidden;
+ text-align: center;
+ align-items: center;
+
+
+
+  
+}
+
+
+.edu-txt {
+  animation: slideFromBottom 2s;
+   animation-delay: 1s;
+  
+}
+
+.bgebs-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+    font-weight: bold;
+  text-align :center;
+  font-size: 1.5rem; 
+  height: 30vh;
+}
+
+.bgebs-head-left {
+  align-items: center;
+  margin: 25px ;
+  width: 40%;
+  justify-content: center;
+  text-align: left;
+
+}
+
+.bgebs-head-right {
+
+  align-items: center;
+  margin: 5px ;
+  Width : 60%;
+}
+
+.bgebs-head-right img {
+  margin-top: 15vh;
+  width : 70%;
+  height: 40vh;
+  border-radius: 18px;
+}
+.myedu-banner h1 {
+  justify-content: center;
+}
+
+/* Styles for "bgebs" and "sxc" */
+.bgebs,
+.sxc {
+    display: flex;
+  flex-direction : column;
+    width: 100%;
+}
+
+/* Styles for "bgebs" section */
+.bgebs {
+    background-color: #121212;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 110vh;
+}
+
+/* Styles for "bgebs-head" */
+
+/* Styles for "bgebs-body" */
+.bgebs-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    gap : 3px;
+
+}
+
+/* Styles for "bgebs-img" */
+.bgebs-img {
+    width: 60%;
+  justify-content : space-around;
+  margin-left: 10vw ;
+}
+
+
+.sxc {
+    background-color: #121212;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 110vh;
+}
+
+/* Styles for "bgebs-head" */
+
+.sxc-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+    font-weight: bold;
+  text-align :center;
+  font-size: 1.5rem; 
+  height: 30vh;
+}
+
+.sxc-head-left {
+  align-items: center;
+  margin: 25px ;
+  width: 40%;
+  justify-content: center;
+  text-align: left;
+
+}
+
+.sxc-head-right {
+
+  align-items: center;
+  margin: 5px ;
+  Width : 60%;
+}
+
+.sxc-head-right img {
+  margin-top: 15vh;
+  width : 70%;
+  height: 40vh;
+  border-radius: 18px;
+}
+
+
+/* Styles for "bgebs-body" */
+.sxc-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    gap : 3px;
+}
+
+/* Styles for "bgebs-img" */
+.sxc-img {
+  width : 70%;
+  height: 40vh;
+  border-radius: 18px;
+  justify-content : space-around;
+  margin-left: 10vw ;
+  
+}
+
+
+/* Styles for "slider" */
+.slider {
+    width: 30vw;
+    height: 50vh ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.slider img {
+    width: 100%;
+    height: 50vh;
+    animation: slide 8s infinite;
+    border-radius: 10px;
+    
+   
+}
+
+@keyframes slide {
+    0% { transform: translateX(+100%); }
+    25% { transform: translateX(0%); }
+    50% { transform: translateX(-100%); }
+    75% { transform: translateX(-200%); }
+    99% { transform: translateX(-300%); }
+    100% {
+        transform: translateX(+100%); 
+        animation-timing-function: steps(1); /* Immediately jump back to 0% */
+    }
+    
+    
+}
+
+/* Styles for "bgebs-text" */
+.bgebs-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30vh;
+  
+}
+
+
+.sxc-text {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30vh;
+  
+}
+/* Styles for individual lines of text */
+.text-line1 {
+    margin: 5px 0;
+}
+
+.text-line1 {
+    margin: 5px 0;
+}
+
+
+
+
+.aboutme-more {
+  width: 100vw;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #121212;
+  
+  
+}
+
+iframe {
+  width: 90%;
+  height: 90vh;
+  background: blueviolet;
+  margin: 5vh ;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Experience PAge */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+}
+
+
+
+.exp-heading{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+.cover-name-exp   {
+  font-size: 15vh;
+  gap: 3px;
+  font-weight : 600;
+ letter-spacing : 3px;
+ width : fit-content;
+ height: 20vh;
+ overflow: hidden;
+ margin-left: 30%;
+
+}
+
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(+100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.exp  {
+  animation: slideFromBottom 2s;
+   animation-delay: 1s;
+   
+   color: white;
+   background-color: #121212;
+ 
+   width: 100%;
+ 
+  
+}
+
+.all-exp {
+  width: 100%;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  gap : 5vh;
+}
+
+.experi {
+  display: flex;
+  flex-direction: row;
+  height : 100vh;
+  gap: 2vh;
+
+  
+  
+}
+
+.exp-left {
+  width: 30%;
+
+}
+
+.exp-right {
+  width: 70%;
+}
+
+.exp-left {
+  display: flex;
+  flex-direction: column;
+background : #121212 ;
+}
+
+.exp-right {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* Center image in exp-img */
+.exp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 50vh;
+
+  
+
+}
+
+.exp-img img {
+  max-width: 100%;
+  max-height: 100%;
+border-radius : 10px;
+
+  
+}
+
+/* Center button in exp-site */
+.exp-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 10vh;
+  
+}
+
+.exp-site button {
+  padding: 5px 8px ;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border: 2px red solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3vh;
+}
+
+/* Center icons in exp-icon */
+.exp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 10vh;
+}
+
+.exp-icon .icon {
+  margin: 0 10px; /* Add some spacing between icons */
+}
+
+
+.icon img {
+  width: 5vh;
+  height: 5vh;
+}
+
+
+
+
+
+.exp-right {
+display : flex;
+flex-direction : column ;
+background : #121212;
+}
+
+
+
+.exp-name {
+background : whitesmoke; 
+width : 100%;
+ height : 20vh;
+border-radius : 10px;
+font-size : 9vh;  
+gap : 0 ;
+align-items :center;
+padding : 5vh
+
+
+}
+
+
+
+.hiddenright{
+  opacity: 0;
+  filter: blur(50x);
+  transform: translateX(+100%);
+  transition: transform 2s ,filter 2s;
+  
+
+}
+.showright{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.exp-name .sub {
+font-size : 4vh;
+}
+
+.exp-description {
+  background : #121212;
+  width : 100%;
+  height : 70vh;
+color : rgb(224, 223, 224);
+align-items: center;
+justify-content: center;
+padding-right: 3vh;
+border-radius : 10px;
+}
+
+.descrip-head {
+font-size : 6vh;
+margin-top: 2vh;
+}
+
+.descrip-more {
+
+font-size : 2.7vh;
+line-break: 3;
+padding-right: 3vh;
+margin-top: 5vh;
+
+}
+
+
+
+
+
+.hiddenleft{
+  opacity: 0;
+  filter: blur(50x);
+  transform: translateX(-100%);
+  transition: transform 2s ,filter 2s;
+  
+
+}
+.showleft{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.hiddenright{
+  opacity: 0;
+  filter: blur(50x);
+  transform: translateX(+100%);
+  transition: transform 2s ,filter 2s;
+  
+
+}
+.showright{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.cover {
+  transform: translateY(+100%);
+  transition: transform 1s;
+}
+
+.uncover {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 500px) {
+
+
+  .about-content {
+    flex-direction: column;
+    height: 70vh;
+  
+  }
+  .myquote,
+  .myimg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+   
+
+  }
+
+    /* Styles for the paragraph inside "myquote" */
+  .myquote p {
+    text-align: left;
+    text-size-adjust: 2rem;
+    width: 90%;
+    
+    font-size : 1.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-break: 5px;
+    height: 5vh;
+    
+    
+  }
+  .myimg img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin: 0 auto;
+  }
+
+  .edu-txt-cover{
+    font-size: 8vh;
+   
+  }
+
+  .bgebs-head-right img  , .sxc-head-right img{
+    margin-top: 0vh;
+    width: 25vh;
+    height: 25vh;
+  }
+
+  .bgebs-head-left  , .sxc-head-left {
+    margin: 0vh;
+    width: 100%;
+  }
+
+  .bgebs-body , .sxc-body {
+    margin: 0vh;
+    flex-direction: column;
+   
+    
+
+  }
+
+  .bgebs , .sxc {
+    gap : 5vh;
+  }
+
+  .text-line1 , .text-line2 {
+    width: 100%;
+  
+  }
+
+  .myedu {
+    padding : 0 px;
+  }
+
+  .bgebs-text , .sxc-text {
+    font-size: 2vh;
+    width: 100%;
+    margin: 0px;
+
+  }
+
+  .slider {
+    width: 100%;
+    height: 30vh;
+    margin-left : 25%;
+  }
+
+  .slider img {
+    height: 25vh;
+    width: 100%;
+    overflow: show;
+  }
+
+  .sxc-img {
+    margin-left: 0px;
+  }
+
+   
+ 
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  
+  .overlay {
+
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+
+
+  }
+
+  .close-overlay {
+
+
+    left: 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    height: fit-content;
+    left: 4%;
+    overflow-x: hidden;
+    
+    margin: 3vh;
+  }
+
+  .cover-name-exp {
+    font-size: 6vh;
+    margin-left: 15%;
+    height: 8vh;
+  }
+
+  .all-exp {
+    margin: 5vh 3vh;
+    
+  }
+
+  .experi {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin: 0px;
+  }
+  .exp-left {
+    align-items: center;
+    margin-left: 20%;
+    gap :1vh;
+  }
+  .exp-right {
+    margin-top: 3vh;
+    width: 100%;
+    margin : 0px;
+  }
+
+  .exp-img {
+    width: 25vh;
+    height: 25vh;
+    
+  }
+
+  .exp-name {
+    width: 100%;
+    padding: 3vh;
+    font-size: 6vh;
+    font-weight: 900;
+    height: auto;
+
+  }
+
+   .main {
+      font-size: 6vh;
+  }
+
+  .exp-description {
+    width: 80%;
+    line-break: 3vh;
+    overflow-y: scroll;
+    padding: 3vh;
+  }
+  .descrip-head {
+    font-size: 6vh;
+
+  }
+
+  .descrip-more {
+    font-size: 3vh;
+   
+
+
+  }
+
+
+
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenish Webpage</title>
+    <link rel="stylesheet" href="myweb.css">
+   
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="ring-container">
+            <div class="ring1">
+                <div class="ring2">
+                    <div class="ring3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to hide the loader after 3 seconds
+        function hideLoader() {
+            var loader = document.getElementById("loader");
+            loader.style.opacity = "0";
+            loader.style.transition = "opacity 1s"
+            loader.style.zIndex = "-999"
+        }
+
+        // Call the hideLoader function after 3 seconds (3000 milliseconds)
+        setTimeout(hideLoader, 2000);
+    </script>
+
+
+
+
+
+
+    <nav id="main_nav">
+
+
+        <div class="menu-icon" id="menuIcon" onclick="entering()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span id="menuText"></span>
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="overlay" id="menuOverlay">
+        <button class="close-overlay" onclick="closeOverlay() , exiting"><img src="allgraphics/cross.png" alt="" style="width: 8vh; height: 8vh;"></button>
+        <div class="menu-wrapper" id="cotaineroverlay">
+            <div class="left-content">
+                <div class="menu-content">
+                    <ul class="vertical-list">
+                        <li><a onclick="closeOverlay()">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="projects.html">Research and Projects</a></li>
+                        
+
+                    </ul> 
+                </div>
+            </div>
+
+
+            <div class="search-container">
+                <div>
+                    <ul class="vertical-list">
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="https://lenishpandey.blogspot.com/">My Blogs</a></li>
+                        <li><a href="projects.html">Resources</a></li>
+                    </ul>
+                </div>
+
+               
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+  
+
+    
+
+
+
+
+
+    <section class="first-view ">
+        <div class="profile">
+            <div class="myphoto">
+                <img src="allgraphics/profile_picture.JPG" alt="My Photo"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="profiletext">
+                <div class="upper-div">
+                    <div class="cover-name-fname ">
+                        <div class="myfname">
+
+                            <div clas="fname">Lenish</div>
+
+                        </div>
+                    </div>
+                    <div class="cover-name-lname ">
+                        <div class="mylname">
+
+                            <div clas="lname">Pandey</div>
+
+                        </div>
+                    </div>
+
+                    <div class="mybio">
+                        <p>Student Researcher</p> 
+                    </div>
+                </div>
+                <div class="lower-div">  
+                    <button class="profile-btn btn"><a href="https://www.youtube.com/watch?v=T33NN_pPeNI&t=11s">View
+                            CV</a> </button>
+                    <button class="profile-btn btn"><a href="cv"> View Resume</a></button>
+                </div>
+
+                <div class="profile-icons">
+                    <div class="profile-allicons">
+                        <button class="my-icons"><a href="https://www.facebook.com/lenish.pandey"> <img src="allgraphics/facebook.png"></a></button>
+                        <button class="my-icons">
+                            <a
+                                href="https://www.linkedin.com/in/lenish-pandey-830720214/?originalSubdomain=np">
+                                <img src="allgraphics/linkedin.png"></a></button>
+                        <button class="my-icons"><img src="allgraphics/github.png"></bu<tton>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+
+
+
+    <div id="container">
+
+
+        <div id="experience">
+            <div class="myweb-allheading cover">Experience</div>
+        </div>
+
+        <div id="images-container">
+            <div id="allimages">
+                <div class="image hiddenleft"><a href="experience.html#qnepal" style="text-decoration: none; color: white;">
+                     <img src="allgraphics/qnepal.png" alt="Image 1">
+                    <h3>QNepal</h3>
+                    <p>Organizer and Mentor</p>
+                </a>
+                </div>
+                <div class="image hiddenleft"><a href="experience.html#fusemachineai" style="text-decoration: none; color: white;">
+                    <img src="allgraphics/fuse.png" alt="Image 2">
+                    <h3>Fuse Machine</h3>
+                    <p>Internship</p>
+                </a>
+                </div>
+
+                <div class="image hiddenleft"><a href="experience.html#fusemachineai" style="text-decoration: none; color: white;">
+                    <img src="allgraphics/incu.png" alt="Image 3">
+                    <h3>Incubate Nepal</h3>
+                    <p>Researcher</p>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="viewmore">
+            <div class="viewall">
+                <center> <a href="experience.html"><img src="allgraphics/plus.png"
+                            style="width: 10vh ; height: 10vh;"></a>
+                </center>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        function redirectToProject() {
+            var clickedDiv = event.target; // Get the clicked element
+            if (clickedDiv.id === "more_projects" || clickedDiv.id === "CO2" || clickedDiv.id === "baghchal" || clickedDiv.id === "datanexus" || clickedDiv.id === "vocab" || clickedDiv.id === "shor" || clickedDiv.id === "vqe") {
+                // Redirect to the "project.html" page
+                window.location.href = 'projects.html';
+            }
+        }
+    </script>
+
+ 
+    <section class="projects">
+        <div class="project-container hiddenleft cornor1">
+            <div class="top">Projects </div>
+            <div class="bottom" id="more_projects" onclick="redirectToProject()">See More</div>
+        </div>
+
+        <div class="project-container hiddenleft center1">
+              <div class="top" id="CO2" onclick="redirectToProject()">
+                <div class="bottom-text">ML Model : Vehicle's CO2 Emission Prediction</div>
+            </div> 
+
+            <div class="bottom" id="baghchal" onclick="redirectToProject()">
+                <div class="bottom-text">Baghchal : A Traditional Game</div>
+            </div>
+        </div>
+
+
+        <div class="project-container hiddenright center2">
+             <div class="top" id="datanexus" onclick="redirectToProject()">
+                <div class="bottom-text">Data Nexus</div>
+            </div> 
+
+           
+            <div class="bottom" id="vocab" onclick="redirectToProject()">
+                <div class="bottom-text">Advanced Vocab Project</div>
+            </div>
+           
+        </div>
+
+        <div class="project-container hiddenright cornor2">
+        
+            <div class="top" id="shor" onclick="redirectToProject()">
+                <div class="bottom-text">Shor's Color Encoding </div>
+            </div> 
+        
+            <div class="bottom" id="vqe" onclick="redirectToProject()">
+                <div class="bottom-text">Variational Quantum Eigensolver      </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <div id="research">
+        <div id="research-left ">
+            <div id="r-left-top">
+                <div class="myweb-allheading cover">Research</div>
+            </div>
+            <div id="r-left-down">
+                <img src="allgraphics/research.gif" alt="Research Gif">
+            </div>
+        </div>
+        <div id="research-right">
+            <div class="research-right-item hiddenleft">
+                <div class="research-title">Title 1</div>
+                <div class="research-description">Description 1</div>
+                <button class="readmore">Read More</button>
+            </div>
+            <div class="research-right-item hiddenleft">
+                <div class="research-title">Title 2</div>
+                <div class="research-description">Description 2</div>
+                <button class="readmore">Read More</button>
+            </div>
+            <div class="research-right-item hiddenleft">
+                <div class="research-title">Title 3</div>
+                <div class="research-description">Description 3</div>
+                <button class="readmore">Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="comments">
+        <div class="allreviews">
+            <div class="review-heading">
+                <div class="myweb-allheading cover">My Mentor's Messages</div>
+            </div>
+            <div class="review-container">
+                <div class="review-box hiddenleft">
+                    <img src="allgraphics/mukeshdai.jfif" alt="User 1">
+                    <h1>Mukesh Ghimire<br>
+                        <h3>Nuclear Physicist</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos voluptates mollitia itaque
+                        totam obcaecati facere hic aut, et nam incidunt minima magnam dolorum magni aspernatur, modi
+                        nostrum dolore blanditiis eum?.</p>
+                </div>
+                <div class="review-box hiddenleft">
+                    <img src="allgraphics/sabindai.jfif" alt="User 2">
+                    <h1>Sabin Thapa<br>
+                        <h3>QNepal, President-Founder</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit asperiores, magni, ipsum
+                        reiciendis autem aut nihil alias quos cupiditate blanditiis deleniti dolorem aliquam magnam quia
+                        deserunt amet dicta officiis nulla!</p>
+                </div>
+                <div class="review-box hiddenleft">
+                    <img src="allgraphics/gauravdai.jfif">
+                    <h1>Gaurav Pandya<br>
+                        <h3>ML Engineer, FuseMachineAI</h3>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque molestiae tenetur quo dicta
+                        dolorum expedita praesentium accusamus? Odio natus sunt blanditiis molestias dolorem. Temporibus
+                        quisquam magni dolores libero iusto!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="onscroll.js"></script>
+    <script src="myweb.js"></script>
+</body>
+
+</html>
