@@ -818,7 +818,7 @@ body {
 .viewall  img:hover{
   transform: rotate(270deg);
   transition: transform 2s;
-  position: relative;
+  
 }
 
 .viewall  img:not(:hover) {
