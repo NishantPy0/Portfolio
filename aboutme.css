@@ -242,14 +242,26 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-   height : 100vh;
+
     height: fit-content;
     background-color: #121212;
     display: flex;
-
+  align-items: center;
     flex-direction : column;
     height : auto;
+   padding-top: 10vh;
    
+  }
+
+  .about-heading-cover {
+    text-align  : center;
+    justify-content: center;
+    color: white;
+    height : 15vh;
+    width : fit-content;
+   
+    overflow-y: hidden;
+    
   }
 
   .about-heading {
@@ -260,8 +272,13 @@ body {
     top: 50%;
     font-size : 10vh;
     margin-top: 25px;
+    animation: slideFromBottom 1s;
+    animation-delay: 2.5s;
+    
     
   }
+
+
   .about-content {
     display : flex;
     flex-direction : row;
@@ -278,6 +295,16 @@ body {
     color: #fff;
    
 
+  }
+
+  .myquote {
+    animation : slideFromLeft 1s;
+    animation-delay: 2.5s;
+  }
+
+  .myimg {
+    animation : slideFromRight 2s;
+    animation-delay: 2.5s;
   }
 
     /* Styles for the paragraph inside "myquote" */
@@ -519,6 +546,7 @@ color : white;
 .slider img {
     width: 100%;
     height: 50vh;
+    margin: 1vh;
     animation: slide 8s infinite;
     border-radius: 10px;
     
@@ -629,8 +657,15 @@ body, html {
  height: 20vh;
  overflow: hidden;
  margin-left: 30%;
+ background-color: #00bcd4;
 
 }
+
+.exp-title {
+  animation: slideFromBottom 2s;
+  animation-delay: 2.5s;
+
+} 
 
 
 @keyframes slideFromBottom {

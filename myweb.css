@@ -142,9 +142,6 @@ body {
   transition: all 0.3 ease-in-out;
   position: relative;
 
-
-
-
 }
 
 
@@ -155,6 +152,10 @@ body {
 
 .menu-icon.active {
   display: none;
+}
+
+.menu-icon:hover span {
+  background-color: #AA02FF;
 }
 
 
@@ -573,11 +574,7 @@ body {
 }
 
 
-.btn:hover {
-  color: goldenrod;
 
-
-}
 
 .profile-icons {
   
@@ -778,6 +775,13 @@ body {
 
 }
 
+
+.image:not(:hover) img {
+  transform: translateY(0);
+   transition: transform 1s;
+}
+
+
 .image:hover {
   border-color: #AA02FF;
 }
@@ -804,6 +808,23 @@ body {
 
 
 
+.viewmore {
+
+  height: 10vh;
+  
+  width: 100%;
+}
+
+.viewall  img:hover{
+  transform: rotate(270deg);
+  transition: transform 2s;
+  position: relative;
+}
+
+.viewall  img:not(:hover) {
+  transform: rotate(0deg);
+   transition: transform 2s;
+}
 
 
 .top , .bottom {
@@ -835,6 +856,10 @@ body {
   position: relative;
 }
 
+
+
+
+
 .cornor1 {
 
   display: flex;
@@ -854,11 +879,13 @@ body {
   color : black;
   font-size: 5vh;
   font-weight: bold;
-  border: 3px solid black;
+  border: 3px solid rgb(11, 11, 11);
   border-radius: 15px;
   background-image: url(allgraphics/projectimg.jfif);
   background-size: cover;
 }
+
+
 
 .cornor1 .bottom {
   background-image: url(allgraphics/seemore.png);
@@ -992,6 +1019,10 @@ body {
   border-radius: 15px;
 }
 
+
+.top:hover , .bottom:hover {
+  border: 3px solid rgb(190, 10, 10)
+}
 
 @keyframes zoomin {
   0% {
@@ -1183,6 +1214,10 @@ body {
 }
 
 
+.lower-div button:hover {
+  border: 2px solid rgb(115, 0, 255);
+}
+
 
 
 
@@ -1322,7 +1357,6 @@ body {
   }
 
 
-
   .profile-btn {
     margin-right: 3px;
     /* Adjusted margin between buttons */
@@ -1337,8 +1371,11 @@ body {
     border: 2px solid red;
     /* Add a red border to the buttons */
     border-radius: 10px;
+   
 
   }
+
+
 
 
 
@@ -1414,9 +1451,20 @@ body {
   .viewmore {
 
     height: 10vh;
-
+    
     width: 100%;
   }
+
+  .viewall  img:hover{
+    transform: rotate(270deg);
+    transition: transform 2s;
+    position: relative;
+  }
+
+  .viewall  img:not(:hover) {
+    transform: rotate(0deg);
+     transition: transform 2s;
+}
 
   .viewmore button {
     border: none;
@@ -1533,6 +1581,7 @@ body {
 
   .center1 .bottom:hover {
     animation: zoomin 3s;
+    border: 2px solid red;
 
   }
 
