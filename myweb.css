@@ -1047,7 +1047,9 @@ body {
   display: flex;
   background: #121212;
   color: white;
-  padding: 15vh;
+  padding: 5vh;
+  margin-top: 3vh;
+
 
 }
 
@@ -1057,6 +1059,7 @@ body {
   flex: 1;
   background-color: #121212;
   z-index: 1;
+  margin-top: 4vh;
 }
 
 #research-right {
