@@ -890,7 +890,7 @@ body {
 
 
 .cornor1 .bottom {
-  background-image: url(allgraphics/seemore.png);
+  background-color: peru;
   background-size: cover;
   flex: 70%;
   display: flex;
@@ -924,7 +924,7 @@ body {
 
 .center1 .bottom {
 
-  background-image: url(allgraphics/baghchal.png);
+  background-image: url(allgraphics/baghchalwhite.png);
   background-size: cover;
   flex: 40%;
   display: flex;
@@ -937,10 +937,6 @@ body {
 
 }
 
-.center1 .bottom:hover {
-  animation: zoomin 3s;
-
-}
 
 
 
@@ -965,8 +961,9 @@ body {
 }
 
 .center2 .top {
-  background-image: url(allgraphics/Shors-code-Encoder-Channel-Decoder-Corrector.png);
-  background-size: cover;
+  background-image: url(allgraphics/datanexus.jpg);
+  background-size: 100%;
+ 
   flex: 40%;
   display: flex;
   align-items: flex-end;
@@ -1025,19 +1022,9 @@ body {
 
 
 .top:hover , .bottom:hover {
-  border: 3px solid rgb(190, 10, 10)
+  border: 3px solid rgb(115, 0, 255);
 }
 
-@keyframes zoomin {
-  0% {
-    background-size: 100%;
-  }
-
-  100% {
-    background-size: 150%;
-  }
-
-}
 
 
 
@@ -1573,8 +1560,8 @@ body {
 
   .center1 .bottom {
 
-    background-image: url(allgraphics/baghchal.png);
-    background-size: cover;
+    background-image: url('allgraphics/baghchalwhite.png');
+    background-size: 100% 100%;
     flex: 40%;
     display: flex;
     align-items: flex-end;
@@ -1583,12 +1570,6 @@ body {
     margin: 3px;
     border: 3px solid black;
     border-radius: 15px;
-
-  }
-
-  .center1 .bottom:hover {
-    animation: zoomin 3s;
-    border: 2px solid red;
 
   }
 
@@ -1604,11 +1585,11 @@ body {
   }
 
   .center2 .top {
-    background-color: #E2E2E2;
+   
+    
     flex: 40%;
     display: flex;
     align-items: flex-end;
-    
     width: 95%;
     margin: 3px;
     border: 3px solid black;
