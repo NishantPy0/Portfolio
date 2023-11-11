@@ -154,29 +154,31 @@ body {
 .otherinfo a {
   text-decoration: none;
   color: white;
-
 }
 .otherinfo button {
   background-color: #121212;
   margin-top : 5vh;
 }
 .otherinfo button , .otherinfo img {
-  margin-left: 3vh;
+  margin-left: 2vh;
 }
 
 .description {
     width: 60%;
-    padding: 10px;
+  
     color: white;
     background-color: rgb(58, 60, 58); /* Background color for Description */
-    padding: 5vh 0vh 5vh 5vh;
+    padding: 3vh;
    overflow-y : scroll;
     
 }
 
 .otherinfo img {
-    width : 70vh;
-    height: 50vh;
+    width : 80%;
+    height: 40vh;
+    margin: 3vh;
+    border : 2px solid #673fdb ;
+
     
    
 }
@@ -606,6 +608,10 @@ body {
 
   .heading-project-cover {
     height: fit-content;
+  }
+
+  .description {
+    padding-left: 1vh;
   }
 
 
