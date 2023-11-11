@@ -1023,6 +1023,30 @@ body {
 
 .top:hover , .bottom:hover {
   border: 3px solid rgb(115, 0, 255);
+  animation: zoomin 1s;
+}
+
+@keyframes zoomin{
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 120%;
+  }
+}
+
+.top:not(:hover) , .bottom:not(:hover) {
+  
+  animation: zoomout 1s;
+}
+
+@keyframes zoomout{
+  from {
+    background-size: 120%;
+  }
+  to {
+    background-size: 100%;
+  }
 }
 
 
