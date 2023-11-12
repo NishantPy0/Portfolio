@@ -632,7 +632,7 @@ body {
 #container {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: auto;
   flex-direction: column;
   gap: 50px;
   justify-content: center;
@@ -1109,11 +1109,15 @@ body {
 
 .research-right-item {
   margin: 10px;
-  border: 1px solid red;
+  border: 2px solid red;
   /* Add a white border to each right-content div */
   padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.research-right-item:hover {
+  border: 2px solid rgb(115, 0, 255);
 }
 
 .research-title {
@@ -1154,8 +1158,8 @@ body {
 
 .comments {
   background: #121212;
-  padding: 20px;
-  width: 100%;
+ 
+  width: 95%;
   height: fit-content;
   overflow: hidden;
 
@@ -1170,7 +1174,7 @@ body {
   width: 100%;
   height: auto;
   background-color: #121212;
-  padding: 20px;
+ 
   border-radius: 10px;
 
   gap: 0vh;
@@ -1225,8 +1229,9 @@ body {
 .review-box p {
   font-size: 14px;
   margin: 5px;
-  width: 80%;
+  width: 98%;
   text-align: left;
+  font-family: sans-serif;
   justify-content: center;
   margin-left: 5vh;
 }
@@ -1680,9 +1685,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    gap : 10vh;
-
-    
+    gap : 10vh;    
   }
 
   .review-container {
@@ -1704,7 +1707,7 @@ body {
 
   .review-box p{
     text-align: left;
-    width: 90%;
+    width: 95%;
     font-size: 2vh;
     
   }

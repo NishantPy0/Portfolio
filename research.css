@@ -165,7 +165,6 @@ body {
 
 .description {
     width: 60%;
-  
     color: white;
     background-color: rgb(58, 60, 58); /* Background color for Description */
     padding: 3vh;
@@ -177,7 +176,7 @@ body {
     width : 80%;
     height: 40vh;
     margin: 3vh;
-    border : 2px solid #673fdb ;
+    border : 4px solid #673fdb ;
 
     
    
