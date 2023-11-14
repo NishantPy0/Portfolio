@@ -27,13 +27,13 @@
   display: flex;
   flex-direction: column;
 
-  background: rgb(246, 243, 243);
+  background: #2b2a2a; /* grey relative */
   cursor: e-resize;
-  border: 1px solid red;
+/*  border: 1px solid red;*/
   border-radius: 50px;
 
   max-width : 750px;
-  color : goldenrod;
+  color : red;
   max-height: 90vh;
 
 }
@@ -44,7 +44,7 @@
   align-items: center;
   text-align: center;
   margin-top: 50px;
-  font-family: 'Caveat', cursive;
+  font-family: auto;
   font-size: 10vh;
 }
 
@@ -53,6 +53,7 @@
   font-size: 3vh;
   padding: 3vh;
   color: red;
+  color: #d7d3d2;
 }
 
 
