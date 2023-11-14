@@ -102,57 +102,68 @@
 
 
 <div class="space" id="space1">
-    <h2>Major Certificate</h2>
-    <img src="allgraphics/Highschool Activity/Math Mela 2019_page-0001.jpg" alt="Major Certificate">
+    <center><h2>Certification from IBM</h2></center>
+
+    <div class="ibm_honors">
+        
+         <img src="allgraphics/Honors/QGSS'23.jpg">
+    <img src="allgraphics/Honors/QGSS'22.jpg">
+    </div>
 </div>
 
 <div class="space space2" id="space2">
+    <center> <h2>Intern at FuseMachineAI</h2> </center>
+
+
+    <div class="fuse_honors">
     <div class="place1">
-        <h2>Place 1</h2>
-        <img src="allgraphics/Highschool Activity/Intra College Quiz Competition 2021_page-0001.jpg" alt="Image 1">
+        <h2>Deep Learning Fellowship </h2>
+        <img src="allgraphics/Honors/DL.png" alt="Image 1">
     </div>
     <div class="place2">
-        <h2>Place 2</h2>
-        <img src="allgraphics/Highschool Activity/Math Mela 2019_page-0001.jpg" alt="Image 2">
+        <h2>Machine Learning Fellowship </h2>
+        <img src="allgraphics/Honors/ML.png" alt="Image 2">
     </div>
-    <div class="place3">
-        <h2>Place 3</h2>
-        <img src="allgraphics/Highschool Activity/Mattrab Community Creator_page-0001.jpg" alt="Image 3">
+
     </div>
+  
+        
 </div>
 
 <div class="space" id="space3">
     <div class="grid-container">
         <div>
-            <h2>Image 1</h2>
-            <img src="allgraphics/Highschool Activity/SXC Mini Marathon 2019_page-0001.jpg" alt="Image 4">
+            <h2>Climate Change AI</h2>
+            <img src="allgraphics/Honors/climateAI.jpg" alt="Image 4">
         </div>
         <div>
-            <h2>Image 2</h2>
-            <img src="allgraphics/Highschool Activity/Intra College Quiz Competition 2021_page-0001.jpg" alt="Image 5">
+            <h2>Course Completion by QxQ</h2>
+            <img src="allgraphics/Honors/QxQ.jpg" alt="Image 5">
         </div>
         <div>
-            <h2>Image 3</h2>
-            <img src="allgraphics/Highschool Activity/7th Sxc cycle Rally-2020, Ride Against Cancer fundraiser_page-0001.jpg" alt="Image 6">
+            <h2>Scholarship -Womanium Quantum</h2>
+            <img src="allgraphics/Honors/womanium-scholarships.jpg" alt="Image 6">
         </div>
         <div>
-            <h2>Image 4</h2>
-            <img src="allgraphics/Highschool Activity/Treasure Hunt, Hunting Riches _page-0001.jpg" alt="Image 7">
+            <h2>QIQT Honors</h2>
+            <img src="allgraphics/Honors/QIQT.jpg" alt="Image 7">
         </div>
 
         <div>
-            <h2>Image 2</h2>
-            <img src="allgraphics/Highschool Activity/Intra College Quiz Competition 2021_page-0001.jpg" alt="Image 5">
+            <h2>QCML by OpenHPI</h2>
+            <img src="allgraphics/Honors/qcml.jpg" alt="Image 5">
         </div>
         <div>
-            <h2>Image 3</h2>
-            <img src="allgraphics/Highschool Activity/7th Sxc cycle Rally-2020, Ride Against Cancer fundraiser_page-0001.jpg" alt="Image 6">
+            <h2>QC Optimization by OpenHPI</h2>
+            <img src="allgraphics/Honors/qcoptimization.jpg" alt="Image 6">
         </div>
         <div>
-            <h2>Image 4</h2>
-            <img src="allgraphics/Highschool Activity/Treasure Hunt, Hunting Riches _page-0001.jpg" alt="Image 7">
+            <h2>Hon' Mention - Budhanilkantha Physics Olympiad</h2>
+            <img src="allgraphics/Honors/bpho.jpg" alt="Image 7">
         </div>
-        <!-- Add more images as needed -->
+
+        
+        
     </div>
         <!-- Add more images as needed -->
     </div>
@@ -168,34 +179,74 @@
         color: white;
     }
 
-    .space {
+  .space {
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .space img {
-        max-width: 100%;
-        max-height: 100%;
+
+    #space1 {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    #space1 img {
+        width: 100%;
+       height: 90%;
         margin-top: 10px;
     }
 
     #space2 {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
-        
+        flex-direction: column;
+        width: 100%;
     }
 
+
+    .fuse_honors {
+        display: flex;
+        gap : 5vh;
+    }
+    #space2 img {
+        width: auto;
+        height: 40vh;
+
+    }
+
+    .ibm_honors img {
+        width: 100%;
+        max-height: auto;
+
+
+    }
+    .ibm_honors {
+        display: flex;
+        column-gap: 3vh;
+           }
+    .ibm_honors img {
+        width: auto;
+        max-height: 40vh;
+
+    }
+        
+    
+     #space3 img {
+        max-width: 90%;
+        height: 75%;
+     }
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(3, 3fr);
+        gap : 5vh;
+        row-gap: 15vh;
     }
 </style>
 
