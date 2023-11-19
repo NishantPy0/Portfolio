@@ -540,7 +540,7 @@ color : white;
     width: 30vw;
     height: 50vh ;
     overflow: hidden;
-    overflow-x: scroll;
+    
     display: flex;
     flex-direction: row;  
 }
@@ -557,6 +557,7 @@ color : white;
 /*    animation: slide  50s infinite;*/
     border-radius: 10px;
 }
+
 
 @keyframes slide {
     0% { transform: translateX(+50%); }
@@ -588,7 +589,7 @@ color : white;
     padding: 3vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
     margin-right: 30vh;
 }
 /* Styles for individual lines of text */
@@ -817,7 +818,7 @@ background : #121212;
 .exp-name {
 background : whitesmoke; 
 width : 100%;
- 
+  color: white;
 border-radius : 10px;
 font-size : 9vh;  
 gap : 0 ;
@@ -1128,6 +1129,7 @@ padding-right: 9vh;
     font-size: 6vh;
     font-weight: 900;
     height: auto;
+    color: white;
 
   }
 
