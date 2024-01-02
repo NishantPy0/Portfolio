@@ -974,7 +974,8 @@ body {
 }
 
 .center2 .bottom {
-  background-color: #AA02FF;
+  background-image: url(allgraphics/text-sum.jpg);
+  background-size: 100%;
   flex: 40%;
   display: flex;
   align-items: flex-end;
