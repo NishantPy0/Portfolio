@@ -888,7 +888,7 @@ body {
 
 
 .cornor1 .bottom {
-  background-color: peru;
+  background-color: wheat ;
   background-size: cover;
   flex: 70%;
   display: flex;
@@ -908,6 +908,7 @@ body {
 }
 
 .center1 .top {
+  background-color: wheat;
   background-image: url(allgraphics/carbonemission.png);
   background-size: cover;
   flex: 40%;
@@ -921,8 +922,8 @@ body {
 }
 
 .center1 .bottom {
-
-  background-image: url(allgraphics/baghchalwhite.png);
+  background-color: lightpink;
+  background-image: url(allgraphics/baghchal.png);
   background-size: cover;
   flex: 40%;
   display: flex;
@@ -994,6 +995,7 @@ body {
 }
 
 .cornor2 .top {
+  background-color: wheat;
   background-image: url(allgraphics/Shors-code-Encoder-Channel-Decoder-Corrector.png);
   background-size: cover;
   flex: 30%;
@@ -1008,7 +1010,7 @@ body {
 }
 
 .cornor2 .bottom {
-  background-color: yellow;
+  background-color: lightpink;
   flex: 70%;
   display: flex;
   align-items: flex-end;
